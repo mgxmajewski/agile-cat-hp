@@ -86,12 +86,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.mobile {
+  display: none
+}
+
 .main-page {
   padding-top: 1em;
   padding-left: 4em;
   padding-right: 4em;
   line-height: 1.5em;
-  color: blue;
+  color: #001c9a;
   font-family: "Times New Roman", serif;
   font-size: 30pt;
   text-align: justify;
@@ -101,6 +105,7 @@ textarea {
   hyphens: manual;
   text-justify: inter-word;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -193,10 +198,20 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
 }
 
+@media (max-width: 640px) {
+  .mobile {
+    display: block
+  }
+
+  .desktop {
+    display: none
+  }
+}
+
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
