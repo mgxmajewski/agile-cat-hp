@@ -86,7 +86,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+.main-page {
+  padding-top: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+  line-height: 1.5em;
+  color: blue;
+  font-family: "Times New Roman", serif;
+  font-size: 30pt;
+  text-align: justify;
+  /*word-break: break-word;*/
+  /*word-break: break-all;*/
+  /*overflow-wrap: break-word;*/
+  hyphens: manual;
+  text-justify: inter-word;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
