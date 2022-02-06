@@ -86,6 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+sup {
+  font-size: .6em;
+  vertical-align: baseline;
+  position: relative;
+  top: -.45em;
+}
+
 .mobile {
   display: none
 }
