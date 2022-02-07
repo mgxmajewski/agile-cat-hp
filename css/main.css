@@ -93,22 +93,36 @@ sup {
   top: -.45em;
 }
 
+.rhomboid{
+  font-size: .6em;
+  vertical-align: baseline;
+  position: relative;
+  top: -.2em;
+}
+
+.full.rhomboid{
+  font-size: 1.2em;
+  vertical-align: baseline;
+  position: relative;
+  top: .1em;
+}
+
 .mobile {
   display: none
 }
 
 .main-page {
-  padding-top: 1em;
-  padding-left: 4em;
-  padding-right: 4em;
-  line-height: 1.5em;
+  padding-top: .8em;
+  padding-left: 3.1em;
+  padding-right: 3.1em;
+  line-height: 1.3em;
   color: #001c9a;
   font-family: "Times New Roman", serif;
-  font-size: 30pt;
+  font-size: 3.5em;
   text-align: justify;
   /*word-break: break-word;*/
   /*word-break: break-all;*/
-  /*overflow-wrap: break-word;*/
+  /*overflow-wrap: break-wordK;*/
   hyphens: manual;
   text-justify: inter-word;
 }
