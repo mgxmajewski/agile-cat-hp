@@ -95,12 +95,14 @@ sup {
 
 .rhomboid{
   font-size: .6em;
+  margin: -.1em;
   vertical-align: baseline;
   position: relative;
   top: -.2em;
 }
 
 .full.rhomboid{
+  margin: -.3em;
   font-size: 1.2em;
   vertical-align: baseline;
   position: relative;
