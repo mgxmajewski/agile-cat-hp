@@ -221,7 +221,7 @@ sup {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media (max-width: 640px) {
+@media (max-aspect-ratio: 13/9) {
   .mobile {
     display: block
   }
