@@ -114,13 +114,15 @@ sup {
 }
 
 .main-page {
-  padding-top: .8em;
-  padding-left: 3.1em;
-  padding-right: 3.1em;
+  /*width: 90%;*/
+  /*padding-bottom: 75%;*/
+  /*padding-top: .8em;*/
+  /*padding-left: 3.1em;*/
+  /*padding-right: 3.1em;*/
   line-height: 1.3em;
   color: #001c9a;
   font-family: "Times New Roman", serif;
-  font-size: 3.5em;
+  font-size: 3.85vw;
   text-align: justify;
   /*word-break: break-word;*/
   /*word-break: break-all;*/
