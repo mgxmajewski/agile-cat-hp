@@ -115,10 +115,9 @@ sup {
 
 .main-page {
   /*width: 90%;*/
-  /*padding-bottom: 75%;*/
-  /*padding-top: .8em;*/
-  /*padding-left: 3.1em;*/
-  /*padding-right: 3.1em;*/
+  padding-top: .5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   line-height: 1.3em;
   color: #001c9a;
   font-family: "Times New Roman", serif;
