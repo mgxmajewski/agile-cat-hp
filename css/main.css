@@ -114,20 +114,20 @@ sup {
 }
 
 .main-page {
+  font-size: 3.4vw;
   /*width: 90%;*/
-  padding-top: .5vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  line-height: 1.3em;
+  padding-top: 1.54vw;
+  padding-left: 6.2vw;
+  padding-right: 6.2vw;
+  line-height: 4.3vw;
   color: #001c9a;
   font-family: "Times New Roman", serif;
-  font-size: 3.85vw;
   text-align: justify;
   /*word-break: break-word;*/
   /*word-break: break-all;*/
   /*overflow-wrap: break-wordK;*/
   hyphens: manual;
-  text-justify: inter-word;
+  text-justify: distribute-center-last;
 }
 
 /* ==========================================================================
