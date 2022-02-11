@@ -86,6 +86,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  color: #001c9a;
+  font-family: "Times New Roman", serif;
+}
+
 sup {
   font-size: .6em;
   vertical-align: baseline;
@@ -93,7 +98,7 @@ sup {
   top: -.45em;
 }
 
-.rhomboid{
+.rhomboid {
   font-size: .6em;
   margin: -.1em;
   vertical-align: baseline;
@@ -101,7 +106,7 @@ sup {
   top: -.2em;
 }
 
-.full.rhomboid{
+.full.rhomboid {
   margin: -.3em;
   font-size: 1.2em;
   vertical-align: baseline;
@@ -121,13 +126,42 @@ sup {
   padding-right: 6.2vw;
   line-height: 4.3vw;
   color: #001c9a;
-  font-family: "Times New Roman", serif;
   text-align: justify;
   /*word-break: break-word;*/
   /*word-break: break-all;*/
   /*overflow-wrap: break-wordK;*/
   hyphens: manual;
   text-justify: distribute-center-last;
+}
+
+.ag-logo {
+  grid-area: logo;
+  font-size: 3.4vw;
+  padding-left: 6.2vw;
+}
+
+.ag-logo-face {
+  font-size: 0.8em;
+}
+
+.buttons-wrapper {
+  grid-area: buttons;
+  display: flex;
+  float: right;
+  padding-right: 6.2vw;
+}
+
+.bottom-button {
+  /*float: right;*/
+}
+
+.bottom-wrapper {
+  display: grid;
+  grid-template-areas: "logo buttons";
+  align-items: center;
+  position: fixed;
+  bottom: 1.6vw;
+  /*margin-bottom: 1.54vw;*/
 }
 
 /* ==========================================================================
