@@ -6,6 +6,14 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+:root {
+  box-sizing: border-box;
+  --cat-blue: #001c9a;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -87,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  color: #001c9a;
+  color: var(--cat-blue);
   font-family: "Times New Roman", serif;
 }
 
@@ -99,11 +107,12 @@ sup {
 }
 
 .rhomboid {
-  font-size: .6em;
+  font-size: 2.5vw;
   margin: -.1em;
   vertical-align: baseline;
+  text-align: center;
   position: relative;
-  top: -.2em;
+  top: -.2vw;
 }
 
 .full.rhomboid {
@@ -124,8 +133,8 @@ sup {
   padding-top: 1.54vw;
   padding-left: 6.2vw;
   padding-right: 6.2vw;
-  line-height: 4.3vw;
-  color: #001c9a;
+  line-height: 1.55;
+  border-color: var(--cat-blue);
   text-align: justify;
   /*word-break: break-word;*/
   /*word-break: break-all;*/
@@ -136,6 +145,7 @@ sup {
 
 .ag-logo {
   grid-area: logo;
+  width: 50vw;
   font-size: 3.4vw;
   padding-left: 6.2vw;
 }
@@ -146,13 +156,31 @@ sup {
 
 .buttons-wrapper {
   grid-area: buttons;
+  width: 50vw;
   display: flex;
-  float: right;
   padding-right: 6.2vw;
+  justify-content: right;
 }
 
 .bottom-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: var(--cat-blue);
+  border: 1px solid var(--cat-blue);
+  /*outline-color: var(--cat-blue) var(--cat-blue);*/
+  border-radius: .7vw;
+  text-align: center;
+  width: 7.936vw;
+  font-size: 1.3vw;
+  height: 2.03vw;
+  margin-left: 1.5vw;
   /*float: right;*/
+}
+
+.bottom-button:hover {
+  background-color: var(--cat-blue);
+  color: #ffffff;
+  border: 1px solid var(--cat-blue);
 }
 
 .bottom-wrapper {
