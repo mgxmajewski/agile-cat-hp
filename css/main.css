@@ -115,12 +115,9 @@ sup {
   top: -.2vw;
 }
 
-.full.rhomboid {
-  margin: -.3em;
-  font-size: 1.2em;
-  vertical-align: baseline;
-  position: relative;
-  top: .1em;
+.empty.rhomboid {
+  font-size: 2.1vw;
+  top: -.4vw;
 }
 
 .mobile {
