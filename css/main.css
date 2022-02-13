@@ -100,10 +100,10 @@ body {
 }
 
 sup {
-  font-size: .6em;
+  font-size: 2.1vw;
   vertical-align: baseline;
   position: relative;
-  top: -.45em;
+  top: -1vw;
 }
 
 .rhomboid {
@@ -281,7 +281,7 @@ sup {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media (max-aspect-ratio: 13/9) {
+@media (max-aspect-ratio: 8/9) {
   .mobile {
     display: block
   }
