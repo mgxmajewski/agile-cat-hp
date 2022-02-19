@@ -155,6 +155,12 @@ sup {
   text-justify: distribute-center-last;
 }
 
+.main-page--contact {
+  padding-top: calc(50vh - 2 * 3.47vw);
+  /*background-color: lightcoral;*/
+}
+
+
 .ag-logo {
   grid-area: logo;
   width: 50vw;
