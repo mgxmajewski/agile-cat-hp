@@ -100,6 +100,13 @@ body {
 }
 
 sup {
+  /*font-size: 2.1vw;*/
+  /*vertical-align: baseline;*/
+  /*position: relative;*/
+  /*top: -1vw;*/
+}
+
+.upper-index{
   font-size: 2.1vw;
   vertical-align: baseline;
   position: relative;
@@ -155,13 +162,21 @@ sup {
   text-justify: distribute-center-last;
 }
 
-.main-page--contact {
-  padding-top: calc(50vh - 2 * 3.47vw);
+.main-page--centered {
+  padding-top: calc(50vh - 1.5 *3.47vw);
   /*background-color: lightcoral;*/
 }
 
+.ag-logo-square{
+  text-align: center;
+  line-height: 1;
+}
 
-.ag-logo {
+.ag-logo-square__middle{
+  width: 100%
+}
+
+.ag-logo-wrapper {
   grid-area: logo;
   width: 50vw;
   font-size: 3.4vw;
