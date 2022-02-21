@@ -156,7 +156,7 @@ body {
 }
 
 .main-page--centered {
-  padding-top: calc(50vh - 1.5 * 3.47vw);
+  padding-top: calc(50vh - 2 * 1.2 * 3.47vw);
   display: flex;
   /*background-color: lightcoral;*/
 }
@@ -205,6 +205,9 @@ body {
   width: 50vw;
   font-size: 3.4vw;
   padding-left: 6.2vw;
+
+  /* minimum height when when logo is not visible */
+  min-height: calc(1.4 * 3.4vw);
 }
 
 .ag-logo-face {
@@ -217,6 +220,10 @@ body {
   display: flex;
   padding-right: 6.2vw;
   justify-content: right;
+}
+
+.buttons-wrapper--right{
+  /*float: right;*/
 }
 
 .bottom-button {
