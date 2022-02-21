@@ -234,7 +234,7 @@ body {
   /*float: right;*/
 }
 
-.bottom-button:hover {
+.bottom-button:hover, .bottom-button--highlighted {
   background-color: var(--cat-blue);
   color: #ffffff;
   border: 1px solid var(--cat-blue);
@@ -247,6 +247,11 @@ body {
   position: fixed;
   bottom: 1.6vw;
   /*margin-bottom: 1.54vw;*/
+}
+
+.silent-link, .silent-link:link, .silent-link:visited, .silent-link:hover, .silent-link:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* ==========================================================================
