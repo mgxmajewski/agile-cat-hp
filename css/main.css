@@ -353,7 +353,7 @@ body {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media (max-aspect-ratio: 8/9) {
+@media (max-aspect-ratio: 63/44) {
   .mobile {
     display: block
   }
