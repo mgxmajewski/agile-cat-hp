@@ -222,7 +222,7 @@ body {
   justify-content: right;
 }
 
-.buttons-wrapper--right{
+.buttons-wrapper--right {
   /*float: right;*/
 }
 
@@ -259,6 +259,30 @@ body {
 .silent-link, .silent-link:link, .silent-link:visited, .silent-link:hover, .silent-link:active {
   color: inherit;
   text-decoration: none;
+}
+
+.tab-separator{
+display: flex;
+
+}
+
+.tab-separator--lowered{
+  padding-top: 2.5vw;
+}
+
+.tab-separator__tab {
+  font-size: 1.3vw;
+  white-space: nowrap;
+  border-radius: .5vw .5vw 0 0;
+  background-color: var(--cat-blue);
+  color: #ffffff;
+  margin-bottom:  0;
+  padding: .2vw 1.2vw;
+}
+
+.tab-separator__line{
+  border-bottom: 2px solid var(--cat-blue);
+  width: 100%;
 }
 
 /* ==========================================================================
