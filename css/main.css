@@ -147,7 +147,6 @@ body {
 }
 
 .main-page {
-  overflow: auto;
   font-size: 3.47vw;
   /*width: 90%;*/
   padding-top: 2vw;
@@ -217,11 +216,13 @@ body {
 }
 
 .bottom-wrapper {
+  background-color: #ffffff;
   display: grid;
   grid-template-areas: "logo buttons";
   align-items: center;
   position: fixed;
-  bottom: 1.6vw;
+  bottom: 0;
+  padding-bottom: 1.6vw;
   /*margin-bottom: 1.54vw;*/
 }
 
@@ -256,6 +257,10 @@ body {
   background-color: var(--cat-blue);
   color: #ffffff;
   border: 1px solid var(--cat-blue);
+}
+
+.bottom-margin{
+  min-height: 6.4vw;
 }
 
 .silent-link, .silent-link:link, .silent-link:visited, .silent-link:hover, .silent-link:active {
