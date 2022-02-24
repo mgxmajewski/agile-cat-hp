@@ -128,6 +128,14 @@ body {
   /*margin-left: -.5vw;*/
 }
 
+.rhomboid--small{
+  font-size: 1.8vw;
+  vertical-align: baseline;
+  text-align: center;
+  position: relative;
+  top: -.25vw;
+}
+
 .empty.rhomboid {
   font-size: 2.1vw;
   top: -.4vw;
@@ -268,7 +276,6 @@ body {
   text-decoration: none;
 }
 
-
 .tab-separator {
   display: flex;
 }
@@ -302,6 +309,11 @@ body {
   /*padding:0;*/
 }
 
+.simple-separator--padded{
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+}
+
 .project-line {
   display: grid;
   grid-template-areas: "name description";
@@ -333,7 +345,11 @@ body {
   top: calc(.33 * 3.2vw);
 }
 
-
+.resume-headline{
+  padding-top: 4vw;
+  font-size: 2.6vw;
+  text-align: justify;
+}
 
 /* ==========================================================================
    Helper classes
@@ -518,4 +534,3 @@ body {
     page-break-after: avoid;
   }
 }
-
