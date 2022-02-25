@@ -328,9 +328,19 @@ body {
   display: flex;
 }
 
+.project-line__name--bigger{
+  font-size: 3.5vw;
+}
+
+
 .project-line__name > sup {
   font-size: calc(.45 * 3.2vw);
   top: calc( 0.3 * 3.2vw);
+}
+
+.project-line__name--bigger > sup{
+    font-size: calc(.45 * 3.5vw);
+  top: calc( 0.3 * 3.5vw);
 }
 
 .project-line__sup-description{
