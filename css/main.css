@@ -249,6 +249,10 @@ body {
   /*justify-content: right;*/
 }
 
+.buttons-wrapper--left-bottom {
+  align-self: flex-end;
+}
+
 .bottom-button {
   color: var(--cat-blue);
   border: 1px solid var(--cat-blue);
@@ -264,6 +268,11 @@ body {
 
 .bottom-button--inline {
   float: right;
+  width: 18vw;
+}
+
+.bottom-button--bottom-left {
+  float: left;
   width: 18vw;
 }
 
@@ -344,7 +353,6 @@ body {
   justify-content: right;
 }
 
-
 .project-line__name {
   grid-area: name;
   font-size: 2.6vw;
@@ -354,7 +362,6 @@ body {
 .project-line__name--bigger {
   font-size: 3.5vw;
 }
-
 
 .project-line__name > sup {
   font-size: calc(.45 * 3.2vw);
@@ -404,6 +411,23 @@ body {
   padding: .5vw 0;
 }
 
+.project-preview-container {
+  display: flex;
+  padding: .5vw 0;
+}
+
+.project-preview-container__image {
+  width: 50%;
+  background-color: crimson;
+}
+
+.project-preview-container__buttons {
+  display: flex;
+  align-self: flex-end;
+  width: 50%;
+  /*margin-top: auto;*/
+  background-color: darkgreen;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
