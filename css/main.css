@@ -284,6 +284,10 @@ body {
   text-decoration: none;
 }
 
+.silent-link--highlighted:hover {
+  color: #1e8fff;
+}
+
 .tab-separator {
   display: flex;
 }
@@ -350,6 +354,7 @@ body {
 .project-line__name--bigger {
   font-size: 3.5vw;
 }
+
 
 .project-line__name > sup {
   font-size: calc(.45 * 3.2vw);
