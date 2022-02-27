@@ -418,7 +418,11 @@ body {
 
 .project-preview-container__image {
   width: 50%;
-  background-color: crimson;
+  /*background-color: crimson;*/
+}
+
+.project-preview-container__image > img {
+  width: 100%;
 }
 
 .project-preview-container__buttons {
@@ -426,7 +430,7 @@ body {
   align-self: flex-end;
   width: 50%;
   /*margin-top: auto;*/
-  background-color: darkgreen;
+  /*background-color: darkgreen;*/
 }
 /* ==========================================================================
    Helper classes
