@@ -288,7 +288,11 @@ body {
   min-height: 6.4vw;
 }
 
-.silent-link, .silent-link:link, .silent-link:visited, .silent-link:hover, .silent-link:active {
+.silent-link,
+.silent-link:link,
+.silent-link:visited,
+.silent-link:hover,
+.silent-link:active {
   color: inherit;
   text-decoration: none;
 }
@@ -436,6 +440,8 @@ body {
 .project-description-copy {
   font-size: 1.6vw;
 }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
