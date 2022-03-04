@@ -237,7 +237,7 @@ body {
   grid-area: buttons;
   width: 50vw;
   display: flex;
-  padding-right: 6.2vw;
+  padding-right: calc(6.2vw + 1vw);
   justify-content: right;
 }
 
