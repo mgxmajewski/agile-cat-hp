@@ -250,7 +250,11 @@ body {
 }
 
 .buttons-wrapper--left-bottom {
-  align-self: flex-end;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*align-items: stretch;*/
+  /*width: 100%;*/
+  /*align-self: flex-end; */
 }
 
 .bottom-button {
@@ -272,8 +276,12 @@ body {
 }
 
 .bottom-button--bottom-left {
+  width: 100%;
   float: left;
-  width: 18vw;
+  display: flex;
+  margin-left: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom-button:hover,
@@ -430,18 +438,21 @@ body {
 }
 
 .project-preview-container__buttons {
+  width: 50%;
   display: flex;
   align-self: flex-end;
-  width: 50%;
-  /*margin-top: auto;*/
-  /*background-color: darkgreen;*/
+  align-items: stretch;
+  /*padding-left: 2vw;*/
+}
+
+.project-preview-container__buttons > a {
+  width: 100%;
+  padding-left: 2vw;
 }
 
 .project-description-copy {
   font-size: 1.6vw;
 }
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
