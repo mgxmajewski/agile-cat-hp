@@ -172,6 +172,22 @@ body {
   text-justify: distribute-center-last;
 }
 
+.main-page--mobile {
+  font-size: 5.45vw;
+  /*width: 90%;*/
+  padding-top: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 1.3;
+  border-color: var(--cat-blue);
+  /*text-align: justify;*/
+  /*word-break: break-word;*/
+  /*word-break: break-all;*/
+  /*overflow-wrap: break-wordK;*/
+  /*hyphens: manual;*/
+  /*text-justify: distribute-center-last;*/
+}
+
 .main-page--centered {
   padding-top: calc(50vh - 2 * 1.2 * 3.47vw);
   display: flex;
