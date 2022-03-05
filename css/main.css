@@ -23,6 +23,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /*
@@ -453,6 +455,7 @@ body {
 .project-description-copy {
   font-size: 1.6vw;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
