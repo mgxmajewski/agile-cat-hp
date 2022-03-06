@@ -152,8 +152,8 @@ body {
   font-size: 2vw;
 }
 
-.mobile {
-  display: block
+.desktop {
+  display: none
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -367,14 +367,15 @@ body {
   }
 }
 
-
 .simple-separator {
-  border-bottom: 2px solid var(--cat-blue);
+  border-bottom: 1px solid var(--cat-blue);
   width: 100%;
 }
 
-.simple-separator--mobile {
-  border-bottom: 1px solid var(--cat-blue);
+@media (min-aspect-ratio: 63/44) {
+  .simple-separator {
+    border-bottom: 2px solid var(--cat-blue);
+  }
 }
 
 .simple-separator--padded {
@@ -383,20 +384,21 @@ body {
 }
 
 .project-line {
-  display: grid;
-  grid-template-areas: "name description";
   line-height: 1;
-  align-items: center;
-  padding: .5vw 0;
-  min-height: 3.61vw;
-}
-
-.project-line--mobile {
-  display: flex;
   align-content: center;
   padding: 2vw 0;
+  min-height: 3.61vw;
+  display: flex;
 }
 
+@media (min-aspect-ratio: 63/44) {
+  .project-line {
+    grid-template-areas: "name description";
+    align-items: center;
+    padding: .5vw 0;
+    display: grid;
+  }
+}
 
 .project-line--empty-right {
   display: flex;
@@ -406,17 +408,26 @@ body {
 
 .project-line__name {
   grid-area: name;
-  font-size: 2.6vw;
+  font-size: 5.45vw;
   display: flex;
 }
 
-.project-line__name--mobile {
-  font-size: 5.45vw;
+@media (min-aspect-ratio: 63/44) {
+  .project-line__name {
+    font-size: 2.6vw;
+  }
 }
 
-.project-line__name--mobile > sub {
+.project-line__name > sub {
   font-size: 2.18vw;
   top: calc(1.2 * 3.2vw);
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .project-line__name > sub {
+    font-size: inherit;
+    top: inherit;
+  }
 }
 
 .project-line__name--bigger {
@@ -424,13 +435,15 @@ body {
 }
 
 .project-line__name > sup {
-  font-size: calc(.45 * 3.2vw);
-  top: calc(0.3 * 3.2vw);
-}
-
-.project-line__name--mobile > sup {
   font-size: calc(.458 * 5.45vw);
   top: calc(0.3 * 5.45vw);
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .project-line__name > sup {
+    font-size: calc(.45 * 3.2vw);
+    top: calc(0.3 * 3.2vw);
+  }
 }
 
 .project-line__name--bigger > sup {
@@ -597,16 +610,6 @@ body {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-}
-
-@media (max-aspect-ratio: 63/44) {
-  .mobile {
-    display: block
-  }
-
-  .desktop {
-    display: none
-  }
 }
 
 @media print,
