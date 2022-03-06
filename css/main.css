@@ -452,23 +452,23 @@ body {
   top: calc(0.3 * 3.5vw);
 }
 
-.project-line__sup-description {
+.project-line__description {
   grid-area: description;
   display: flex;
   justify-content: right;
 }
 
-.project-line__sup-description > sub {
+.project-line__description > sub {
   font-size: calc(.35 * 3.2vw);
   top: calc(.33 * 3.2vw);
 }
 
-.project-line__sup-description--bigger > sub {
+.project-line__description--bigger > sub {
   font-size: calc(.35 * 3.5vw);
   top: calc(.38 * 3.55vw);
 }
 
-.project-line__sup-description--bigger-lifted > sub {
+.project-line__description--bigger-lifted > sub {
   font-size: calc(.35 * 3.5vw);
   top: calc(.25 * 3.55vw);
 }
