@@ -349,12 +349,20 @@ body {
 
 .tab-separator__tab {
   background-color: var(--cat-blue);
-  font-size: 1.3vw;
+  font-size: 3vw;
   white-space: nowrap;
-  border-radius: .5vw .5vw 0 0;
+  border-radius: 1vw 1vw 0 0;
   color: #ffffff;
   margin-bottom: 0;
-  padding: .2vw 1.2vw;
+  padding: .5vw 2.2vw;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .tab-separator__tab {
+    border-radius: .5vw .5vw 0 0;
+    font-size: 1.3vw;
+    padding: .2vw 1.2vw;
+  }
 }
 
 .tab-separator__line {
@@ -424,7 +432,7 @@ body {
   }
 }
 
-/*At the moment used only in mobile to keep long rpoject name in one line*/
+/*At the moment used only in mobile to keep long project name in one line*/
 .project-line__name > sub {
   font-size: 2.3vw;
   top: calc(0.6 * var(--bigger-font));
