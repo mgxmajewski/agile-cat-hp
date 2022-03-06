@@ -9,6 +9,7 @@
 :root {
   box-sizing: border-box;
   --cat-blue: #001c9a;
+  --bigger-font: 5.45vw;
 }
 
 *, ::before, ::after {
@@ -167,7 +168,8 @@ body {
 }
 
 .cat-copy {
-  font-size: 5.45vw;
+  /*font-size: 5.45vw;*/
+  font-size: var(--bigger-font);
   padding-top: 5vw;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -386,7 +388,7 @@ body {
 .project-line {
   line-height: 1;
   padding: 2vw 0;
-  min-height: calc(5.45vw + 2vw + 2vw);
+  min-height: calc(var(--bigger-font) + 2vw + 2vw);
   display: grid;
   grid-template-areas: "name description";
   align-items: center;
@@ -407,8 +409,8 @@ body {
 
 .project-line__name {
   grid-area: name;
-  font-size: 5.45vw;
   display: flex;
+  font-size: calc(var(--bigger-font) * 0.9);
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -417,25 +419,9 @@ body {
   }
 }
 
-.project-line__name > sub {
-  font-size: 2.18vw;
-  top: calc(1.2 * 3.2vw);
-}
-
-@media (min-aspect-ratio: 63/44) {
-  .project-line__name > sub {
-    font-size: inherit;
-    top: inherit;
-  }
-}
-
-.project-line__name--bigger {
-  font-size: 3.5vw;
-}
-
 .project-line__name > sup {
-  font-size: calc(.458 * 5.45vw);
-  top: calc(0.3 * 5.45vw);
+  font-size: calc(.44 * var(--bigger-font));
+  top: calc(0.3 * var(--bigger-font));
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -445,9 +431,10 @@ body {
   }
 }
 
-.project-line__name--bigger > sup {
-  font-size: calc(.45 * 3.5vw);
-  top: calc(0.3 * 3.5vw);
+/*At the moment used only in mobile to keep long rpoject name in one line*/
+.project-line__name > sub {
+  font-size: 2.3vw;
+  top: calc(0.6 * var(--bigger-font));
 }
 
 .project-line__description {
@@ -457,8 +444,37 @@ body {
 }
 
 .project-line__description > sub {
-  font-size: calc(.35 * 3.2vw);
-  top: calc(.33 * 3.2vw);
+  font-size: calc(.35 * 5.45vw);
+  top: calc(.33 * 5.45vw);
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .project-line__description > sub {
+    font-size: calc(.35 * 3.2vw);
+    top: calc(.33 * 3.2vw);
+  }
+}
+
+.project-line__name--bigger {
+    font-size: 3.5vw;
+  }
+
+@media (min-aspect-ratio: 63/44) {
+  .project-line__name--bigger {
+    font-size: 3.5vw;
+  }
+}
+
+.project-line__name--bigger > sup {
+  font-size: calc(.45 * 3.5vw);
+  top: calc(0.3 * 3.5vw);
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .project-line__name--bigger > sup {
+    font-size: calc(.45 * 3.5vw);
+    top: calc(0.3 * 3.5vw);
+  }
 }
 
 .project-line__description--bigger > sub {
