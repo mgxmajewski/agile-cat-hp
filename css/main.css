@@ -152,8 +152,19 @@ body {
   font-size: 2vw;
 }
 
+
 .mobile {
-  display: none
+  display: block
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .mobile {
+    display: none
+  }
+
+  .desktop {
+    display: block
+  }
 }
 
 .main-page {
