@@ -356,14 +356,17 @@ body {
 }
 
 .tab-separator__line {
-  border-bottom: 2px solid var(--cat-blue);
-  width: 100%;
-}
-
-.tab-separator__line--mobile {
   border-bottom: 1px solid var(--cat-blue);
   width: 100%;
 }
+
+@media (min-aspect-ratio: 63/44) {
+  .tab-separator__line {
+    border-bottom: 2px solid var(--cat-blue);
+    width: 100%;
+  }
+}
+
 
 .simple-separator {
   border-bottom: 2px solid var(--cat-blue);
