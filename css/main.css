@@ -438,6 +438,12 @@ body {
   top: calc(0.6 * var(--bigger-font));
 }
 
+@media (min-aspect-ratio: 63/44) {
+  .project-line__name > sub {
+    display: none;
+  }
+}
+
 .project-line__description {
   grid-area: description;
   display: flex;
