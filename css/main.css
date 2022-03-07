@@ -469,8 +469,9 @@ body {
 }
 
 .project-line__name--bigger {
-    font-size: 3.5vw;
-  }
+  font-size: 6vw;
+  white-space: nowrap;
+}
 
 @media (min-aspect-ratio: 63/44) {
   .project-line__name--bigger {
@@ -479,8 +480,8 @@ body {
 }
 
 .project-line__name--bigger > sup {
-  font-size: calc(.45 * 3.5vw);
-  top: calc(0.3 * 3.5vw);
+  font-size: calc(.45 * 6vw);
+  top: calc(0.3 * 6vw);
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -502,14 +503,33 @@ body {
 
 .resume-headline {
   padding-top: 4vw;
-  font-size: 2.6vw;
+  font-size: 5vw;
   text-align: justify;
+  padding-bottom: 1vw;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .resume-headline {
+    padding-top: 4vw;
+    font-size: 2.6vw;
+    text-align: justify;
+    padding-bottom: 1vw;
+  }
 }
 
 .paragraph-medium {
-  font-size: 2.6vw;
-  word-break: break-all;
+  font-size: 4.8vw;
+  /*word-break: break-all;*/
+  word-break: break-word;
   /*word-wrap: break-word;*/
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .paragraph-medium {
+    font-size: 2.6vw;
+    word-break: break-all;
+    /*word-wrap: break-word;*/
+  }
 }
 
 .slashed-list {
