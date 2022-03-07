@@ -10,6 +10,7 @@
   box-sizing: border-box;
   --cat-blue: #001c9a;
   --bigger-font: 5.45vw;
+  --cat-aspect-ratio: 63/44;
 }
 
 *, ::before, ::after {
@@ -157,6 +158,10 @@ body {
   display: none
 }
 
+.desktop--inline{
+  display: none;
+}
+
 @media (min-aspect-ratio: 63/44) {
   .mobile {
     display: none
@@ -164,6 +169,10 @@ body {
 
   .desktop {
     display: block
+  }
+
+  .desktop--inline {
+    display: inline;
   }
 }
 
@@ -195,10 +204,17 @@ body {
 }
 
 .ag-logo-square {
-  padding-top: .6vw;
-  text-align: center;
-  line-height: 1;
-  font-size: 3.3vw;
+  display: none;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .ag-logo-square {
+    display: block;
+    padding-top: .6vw;
+    text-align: center;
+    line-height: 1;
+    font-size: 3.3vw;
+  }
 }
 
 .ag-logo-square__middle {
@@ -220,10 +236,18 @@ body {
 }
 
 .contact-details {
-  font-size: 3.58vw;
-  padding-left: 2.9vw;
+  font-size: 3.4vw;
+  /*padding-left: 2.9vw;*/
   line-height: 1.3;
   text-align: justify;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .contact-details {
+    font-size: 3.58vw;
+    padding-left: 2.9vw;
+    line-height:  1.3;
+  }
 }
 
 .ag-logo-wrapper {
