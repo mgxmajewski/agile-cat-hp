@@ -608,7 +608,7 @@ sup:hover {
   padding-left: 6.2vw;
 
   /* minimum height when when logo is not visible */
-  min-height: calc(1.4 * 3.4vw);
+  min-height: calc(1.5 * 1.4 * 5.45vw);
 }
 
 .ag-logo-face {
