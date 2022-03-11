@@ -636,7 +636,7 @@ sup:hover {
   grid-gap: 2vw;
   position: relative;
   overflow: hidden;
-  top: -15vw;
+  top: 3vw;
   max-height: 0;
   /*transition: .5s ease-out;*/
   /*transition: .1s;*/
@@ -654,6 +654,7 @@ sup:hover {
   text-align: center;
   font-size: 2.5vw;
   padding: .3rem;
+  width: 100%;
 }
 
 .hamb {
