@@ -123,7 +123,8 @@ body {
 }
 
 .eyes {
-  font-size: 1.6vw;
+  font-size: calc(.7 * 5.45vw);
+  /*font-size: 0.6em;*/
 }
 
 .rhomboid {
@@ -311,52 +312,6 @@ body {
     /*margin-right: -.5vw;*/
     /*margin-left: -.5vw;*/
   }
-}
-
-.ag-logo-wrapper {
-  grid-area: logo;
-  width: 50vw;
-  font-size: 3.4vw;
-  padding-left: 6.2vw;
-
-  /* minimum height when when logo is not visible */
-  min-height: calc(1.4 * 3.4vw);
-}
-
-.ag-logo-face {
-  font-size: 0.8em;
-}
-
-.bottom-wrapper {
-  display: grid;
-  position: fixed;
-  grid-template-areas: "logo buttons";
-  bottom: 0;
-  align-items: center;
-  background-color: #ffffff;
-  padding-bottom: 1.6vw;
-  /*margin-bottom: 1.54vw;*/
-}
-
-.buttons-wrapper {
-  grid-area: buttons;
-  width: 50vw;
-  display: flex;
-  padding-right: calc(6.2vw + 1vw);
-  justify-content: right;
-}
-
-.bottom-button {
-  color: var(--cat-blue);
-  border: 1px solid var(--cat-blue);
-  background-color: #ffffff;
-  display: inline-block;
-  border-radius: .4vw;
-  text-align: center;
-  width: 7.936vw;
-  font-size: 1.3vw;
-  height: 2.03vw;
-  margin-left: 1vw;
 }
 
 .bottom-button--inline {
@@ -643,6 +598,196 @@ sup:hover {
 .project-description-copy {
   font-size: 1.6vw;
 }
+
+
+
+.ag-logo-wrapper {
+  grid-area: logo;
+  font-size: calc(1.5 * 5.45vw);
+  /*font-size: 2em;*/
+  padding-left: 6.2vw;
+
+  /* minimum height when when logo is not visible */
+  min-height: calc(1.4 * 3.4vw);
+}
+
+.ag-logo-face {
+  font-size: calc(1.2 * 5.45vw);
+  /*font-size: 0.8em;*/
+}
+
+.bottom-wrapper {
+  display: grid;
+  position: fixed;
+  bottom: 0;
+  grid-template-areas:
+    "menu menu"
+    "logo hamb";
+  width: 100vw;
+  align-items: center;
+  background-color: #ffffff;
+  padding-bottom: 1.6vw;
+}
+
+.buttons-wrapper {
+  grid-area: menu;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+  grid-gap: 2vw;
+  position: relative;
+  overflow: hidden;
+  top: -15vw;
+  max-height: 0;
+  /*transition: .5s ease-out;*/
+  /*transition: .1s;*/
+  padding-right: calc(6.2vw);
+  padding-left: calc(6.2vw);
+  transform: translateY(100%);
+}
+
+.bottom-button {
+  cursor: pointer;
+  color: var(--cat-blue);
+  border: 2px solid var(--cat-blue);
+  background-color: #ffffff;
+  border-radius: 1vw;
+  text-align: center;
+  font-size: 2.5vw;
+  padding: .3rem;
+}
+
+.hamb {
+  cursor: pointer;
+  display: flex;
+  justify-content: right;
+  /*float: left;*/
+  padding-right: calc(6.2vw);
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  /*background-color: chocolate;*/
+}
+
+/* Style label tag */
+
+.hamb-line {
+  background: var(--cat-blue);
+  display: block;
+  height: 3px;
+  /*height: 2vw;*/
+  position: relative;
+  /*width: 24px;*/
+  width: 8vw;
+}
+
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+  background: var(--cat-blue);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  /*top: 5px;*/
+  top: 1.8vw;
+
+}
+
+.hamb-line::after {
+  /*top: -5px;*/
+  top: -1.8vw;
+}
+
+.hamb-checkbox {
+  display: none;
+}
+
+/* Hide checkbox */
+
+/* Toggle menu icon */
+.hamb-checkbox:checked ~ nav {
+  max-height: 100%;
+  transform: translateY(-100%);
+}
+
+.hamb-checkbox:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.hamb-checkbox:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.hamb-checkbox:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .bottom-wrapper {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "logo menu-desktop";
+    /*align-content: center;*/
+  }
+
+
+  .buttons-wrapper-desktop {
+    grid-area: menu-desktop;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4vw, 7.936vw));
+    grid-gap: 1.5vw;
+    padding-right: calc(6.2vw);
+    justify-content: right;
+    /*align-content: baseline;*/
+  }
+
+  .bottom-button {
+    /*display: inline-block;*/
+    border: 1px solid var(--cat-blue);
+    cursor: pointer;
+    border-radius: .4vw;
+    padding-top: .2vw;
+    padding-bottom: .2vw;
+    text-align: center;
+    width: 7.936vw;
+    font-size: 1.3vw;
+    /*max-height: 2.03vw;*/
+    float: right;
+    /*width: 100%;*/
+  }
+
+  /*.mobile {*/
+  /*  display: none;*/
+  /*}*/
+
+  .eyes {
+    font-size: 1.6vw;
+  }
+
+  .ag-logo-face {
+    font-size: 0.8em;
+  }
+
+  .ag-logo-wrapper {
+    /*grid-area: logo;*/
+    width: 50vw;
+    font-size: 3.4vw;
+    padding-left: 6.2vw;
+
+    /* minimum height when when logo is not visible */
+    min-height: calc(1.4 * 3.4vw);
+  }
+}
+
+
 
 /* ==========================================================================
    Helper classes
