@@ -328,12 +328,12 @@ body {
 }
 
 .bottom-wrapper {
-  background-color: #ffffff;
   display: grid;
-  grid-template-areas: "logo buttons";
-  align-items: center;
   position: fixed;
+  grid-template-areas: "logo buttons";
   bottom: 0;
+  align-items: center;
+  background-color: #ffffff;
   padding-bottom: 1.6vw;
   /*margin-bottom: 1.54vw;*/
 }
@@ -344,22 +344,6 @@ body {
   display: flex;
   padding-right: calc(6.2vw + 1vw);
   justify-content: right;
-}
-
-.inline-buttons-wrapper {
-  /*padding: 0;*/
-  /*width: 100%;*/
-  /*align-content: center;*/
-  /*display: flex;*/
-  /*justify-content: right;*/
-}
-
-.buttons-wrapper--left-bottom {
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*align-items: stretch;*/
-  /*width: 100%;*/
-  /*align-self: flex-end; */
 }
 
 .bottom-button {
