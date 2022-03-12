@@ -332,7 +332,7 @@ body {
 .bottom-button--inline:hover,
 .bottom-button--highlighted {
   background-color: var(--cat-blue);
-  border: 1px solid var(--cat-blue);
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 
@@ -605,16 +605,19 @@ sup:hover {
   font-size: 1.6vw;
 }
 
-
-
 .ag-logo-wrapper {
   grid-area: logo;
   font-size: calc(1.5 * 5.45vw);
   /*font-size: 2em;*/
-  padding-left: 6.2vw;
-
+  padding-left: 5vw;
   /* minimum height when when logo is not visible */
   min-height: calc(1.5 * 1.4 * 5.45vw);
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .ag-logo-wrapper {
+    padding-left: 6.2vw;
+  }
 }
 
 .ag-logo-face {
@@ -642,12 +645,12 @@ sup:hover {
   grid-gap: 2vw;
   position: relative;
   overflow: hidden;
-  top: 3vw;
+  /*padding-bottom: 2vw;*/
   max-height: 0;
   /*transition: .5s ease-out;*/
   /*transition: .1s;*/
-  padding-right: calc(6.2vw);
-  padding-left: calc(6.2vw);
+  padding-right: calc(5vw);
+  padding-left: calc(5vw);
   transform: translateY(100%);
 }
 
@@ -668,7 +671,7 @@ sup:hover {
   display: flex;
   justify-content: right;
   /*float: left;*/
-  padding-right: calc(6.2vw);
+  padding-right: calc(5vw);
   padding-bottom: 1vw;
   padding-top: 1vw;
   /*background-color: chocolate;*/
@@ -718,6 +721,12 @@ sup:hover {
 
 /* Toggle menu icon */
 .hamb-checkbox:checked ~ nav {
+  /*background-color: var(--cat-blue);*/
+  border-top: 2px solid var(--cat-blue);
+  background-color: white;
+  top: 5vw;
+  padding-top: 2vw;
+  padding-bottom: .5vw;
   max-height: 100%;
   transform: translateY(-100%);
 }
