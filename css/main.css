@@ -1,13 +1,23 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 @font-face {
-  font-family: 'Times New Roman';
-  /*src: url('webfont.eot'); !* IE9 Compat Modes *!*/
-  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
-  /*     url('webfont.woff2') format('woff2'), !* Super Modern Browsers *!*/
-  /*     url('webfont.woff') format('woff'), !* Pretty Modern Browsers *!*/
-  /*     url('webfont.ttf')  format('truetype'), !* Safari, Android, iOS *!*/
-  /*     url('webfont.svg#svgFontName') format('svg'); !* Legacy iOS *!*/
-  src: url('font/times.ttf') format('truetype')
+    font-family: 'Times New Roman';
+    src: url(font/LiberationSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(font/LiberationSerif-Italic.ttf) format('truetype');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(font/LiberationSerif-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(font/LiberationSerif-BoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
