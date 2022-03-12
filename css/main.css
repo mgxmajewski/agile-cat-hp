@@ -337,7 +337,13 @@ body {
 }
 
 .bottom-margin {
-  min-height: 6.4vw;
+  min-height: 16.543vw;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .bottom-margin {
+    min-height: 6.4vw;
+  }
 }
 
 .silent-link,
