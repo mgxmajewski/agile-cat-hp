@@ -671,7 +671,7 @@ sup:hover {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
+  /*margin-left: auto;*/
   /*float: left;*/
   padding-right: calc(5vw);
   padding-bottom: 1vw;
