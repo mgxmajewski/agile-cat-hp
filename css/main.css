@@ -286,8 +286,8 @@ body {
 
 @media (min-aspect-ratio: 63/44) {
   .contact-container > sup {
-    font-size: calc(.6 * 3.2vw);
-    top: calc(-0.45 * .6 * 3.2vw);
+    font-size: calc(.59 * 3.2vw);
+    top: calc(-0.5 * .6 * 3.2vw);
   }
 }
 
