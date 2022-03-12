@@ -259,6 +259,7 @@ body {
 
 .contact-container {
   font-size: 4.5vw;
+  margin-left: auto;
   /*width: auto;*/
   /*padding: 5vw;*/
   line-height: 1.3;
