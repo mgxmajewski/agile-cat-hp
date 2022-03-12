@@ -214,7 +214,7 @@ body {
 }
 
 .cat-copy--centered {
-  padding-top: calc(50vh - 2 * 1.2 * 3.47vw);
+  padding-top: calc(50vh - 3 * 1.2 * var(--bigger-font));
   display: flex;
 }
 
