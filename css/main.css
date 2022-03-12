@@ -108,20 +108,22 @@ body {
   top: -1vw;
 }
 
-.upper-index--medium {
-  font-size: calc(.6 * 5vw);
-  top: calc(-0.25 * 5vw);
-  white-space: nowrap;
-}
+/*.upper-index--medium  {*/
+/*  font-size: 5px;*/
+/*  background-color: crimson;*/
+/*  top: calc(-0.25 * 5vw);*/
+/*  white-space: nowrap;*/
+/*}*/
 
-@media (min-aspect-ratio: 63/44) {
-  .upper-index--medium {
-    font-size: calc(.6 * 3.2vw);
-    /*vertical-align: baseline;*/
-    /*position: relative;*/
-    top: calc(-0.45 * .6 * 3.2vw);
-  }
-}
+/*@media (min-aspect-ratio: 63/44) {*/
+/*  .upper-index--medium {*/
+/*    font-size: calc(.6 * 3.2vw);*/
+/*    !*vertical-align: baseline;*!*/
+/*      background-color: green;*/
+/*    !*position: relative;*!*/
+/*    top: calc(-0.45 * .6 * 3.2vw);*/
+/*  }*/
+/*}*/
 
 .eyes {
   font-size: calc(.7 * 5.45vw);
@@ -267,12 +269,12 @@ body {
 
 .contact-container__line {
   display: flex;
-  font-size: 5vw;
+  font-size: 4.95vw;
   justify-content: space-between;
 }
 
 .contact-container__line > sup {
-  font-size: calc(.6 * 5.1vw);
+  font-size: calc(.6 * 5vw);
   top: calc(.5 * 5.1vw);
 }
 
@@ -361,9 +363,9 @@ body {
   color: #1e8fff;
 }
 
-sup:hover {
-  color: chocolate;
-}
+/*sup:hover {*/
+/*  color: chocolate;*/
+/*}*/
 
 .tab-separator {
   display: flex;
