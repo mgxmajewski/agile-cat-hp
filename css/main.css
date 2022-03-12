@@ -111,6 +111,7 @@ body {
 .upper-index--medium {
   font-size: calc(.6 * 5vw);
   top: calc(-0.25 * 5vw);
+  white-space: nowrap;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -802,8 +803,6 @@ sup:hover {
     min-height: calc(1.4 * 3.4vw);
   }
 }
-
-
 
 /* ==========================================================================
    Helper classes
