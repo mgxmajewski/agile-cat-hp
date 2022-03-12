@@ -410,7 +410,7 @@ sup:hover {
 }
 
 .tab-separator__line {
-  border-bottom: 2px solid var(--cat-blue);
+  border-bottom: 1px solid var(--cat-blue);
   width: 100%;
 }
 
@@ -670,7 +670,8 @@ sup:hover {
 .hamb {
   cursor: pointer;
   display: flex;
-  justify-content: right;
+  /*justify-content: flex-end;*/
+  margin-left: auto;
   /*float: left;*/
   padding-right: calc(5vw);
   padding-bottom: 1vw;
