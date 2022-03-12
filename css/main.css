@@ -98,10 +98,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@font-face {
-    font-family: 'Times New Roman';
-    src: url(times.ttf) format('truetype');
-}
+/*@font-face {*/
+/*    font-family: 'Times New Roman';*/
+/*    src: url(times.ttf) format('truetype');*/
+/*}*/
 
 body {
   color: var(--cat-blue);
