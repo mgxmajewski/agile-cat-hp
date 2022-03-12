@@ -122,6 +122,8 @@ textarea {
 body {
   color: var(--cat-blue);
   font-family: "Times New Roman", serif;
+    background-color: chocolate;
+
 }
 
 .upper-index {
