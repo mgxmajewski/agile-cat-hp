@@ -508,17 +508,10 @@ body {
 
 .project-line--empty-right {
   display: grid;
+  font-size: 3.2vw;
   grid-template-columns: 1fr;
-  padding-top: 0;
   grid-gap: 2vw;
   justify-items: right;
-  align-self: center;
-}
-
-@media (min-aspect-ratio: 63/44) {
-  .project-line--empty-right {
-    padding: 1vw 0;
-  }
 }
 
 .project-line__name {
