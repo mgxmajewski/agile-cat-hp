@@ -136,7 +136,7 @@ body {
   background-color: #ffffff;
   border-radius: 1vw;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3.2vw;
   padding: .3rem;
   width: 100%;
   /*align-self: center;*/
@@ -389,7 +389,8 @@ body {
 .button--wider:hover,
 .button--highlighted {
   background-color: var(--cat-blue);
-  border: 1px solid #ffffff;
+  /*border: 1px solid #ffffff;*/
+  border: 1px solid var(--cat-blue);
   color: #ffffff;
 }
 
@@ -489,7 +490,7 @@ body {
 .project-line {
   line-height: 1;
   padding: 1vw 0;
-  min-height: calc(var(--bigger-font));;
+  min-height: calc(var(--bigger-font));
   display: grid;
   grid-template-areas: "name description";
   /*align-items: center;*/
@@ -507,7 +508,15 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 2vw;
   justify-items: right;
+  align-items: center;
+  /*height: auto;*/
+  /*height: calc(var(--bigger-font));*/
   /*align-items: center;*/
+}
+
+.project-line--empty-right > a {
+  display: inline-block;
+  /*text-decoration: none;*/
 }
 
 .project-line__name {
