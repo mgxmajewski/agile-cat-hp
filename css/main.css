@@ -554,12 +554,13 @@ body {
 
 .project-line__description {
   grid-area: description;
-  display: grid;
+  white-space: nowrap;
+  display: flex;
 }
 
 .project-line__description > sub {
   font-size: calc(.35 * 5.45vw);
-  top: calc(.33 * 5.45vw);
+  top: calc(.8 * 5.45vw);
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -592,9 +593,15 @@ body {
   }
 }
 
-.project-line__description--bigger > sub {
-  font-size: calc(.35 * 3.5vw);
-  top: calc(.38 * 3.55vw);
+ .project-line__description--bigger > sub {
+    top: calc(1.5 * 3.55vw);
+  }
+
+@media (min-aspect-ratio: 63/44) {
+  .project-line__description--bigger > sub {
+    font-size: calc(.35 * 3.5vw);
+    top: calc(.38 * 3.55vw);
+  }
 }
 
 .project-line__description--bigger-lifted > sub {
