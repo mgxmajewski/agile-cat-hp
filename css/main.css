@@ -617,6 +617,13 @@ body {
   }
 }
 
+@media (min-aspect-ratio: 63/44) {
+  .resume-headline > sup {
+    font-size: 1.5vw;
+    top: -.7vw;
+  }
+}
+
 .paragraph-medium {
   font-size: 4.8vw;
   /*word-break: break-all;*/
