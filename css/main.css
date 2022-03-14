@@ -506,18 +506,13 @@ body {
   }
 }
 
-.project-line--empty-right {
+.project-line--with-buttons {
   display: grid;
-  font-size: 3.2vw;
+  font-size: 3.1vw;
   grid-template-columns: 1fr;
   grid-gap: 2vw;
   justify-items: right;
-}
-
-@media (min-aspect-ratio: 63/44) {
-  .project-line--empty-right {
-    align-content: center;
-  }
+  align-content: center;
 }
 
 .project-line__name {
