@@ -619,9 +619,9 @@ body {
 }
 
 .resume-headline > sup {
-    font-size: calc(0.5 * 5vw);
-    top: calc(-0.3 * 5vw);
-  }
+  font-size: calc(0.5 * 5vw);
+  top: calc(-0.3 * 5vw);
+}
 
 @media (min-aspect-ratio: 63/44) {
   .resume-headline > sup {
