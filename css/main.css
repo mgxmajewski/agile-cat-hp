@@ -495,6 +495,7 @@ body {
   padding: 1vw 0;
   min-height: calc(var(--bigger-font));
   display: grid;
+  grid-template-columns: max-content max-content;
   grid-template-areas: "name description";
   justify-content: space-between;
 }
