@@ -496,6 +496,7 @@ body {
   min-height: calc(var(--bigger-font));
   display: grid;
   grid-template-areas: "name description";
+  justify-content: space-between;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -553,7 +554,6 @@ body {
 .project-line__description {
   grid-area: description;
   display: grid;
-  justify-content: right;
 }
 
 .project-line__description > sub {
