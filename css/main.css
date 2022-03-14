@@ -574,7 +574,7 @@ body {
 @media (min-aspect-ratio: 63/44) {
   .project-line__description > sub {
     font-size: calc(.35 * 3.2vw);
-    top: calc(.33 * 3.2vw);
+    top: calc(.7 * 3.2vw);
   }
 }
 
