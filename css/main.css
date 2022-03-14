@@ -660,9 +660,23 @@ body {
   }
 }
 
-.slashed-list {
-  font-size: 1.7vw;
+.stack-slashed-list {
+  font-size: 2.7vw;
   padding: .5vw 0;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .stack-slashed-list {
+    font-size: 1.7vw;
+    padding: .5vw 0;
+  }
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .stack-slashed-list {
+    font-size: 1.7vw;
+    padding: .5vw 0;
+  }
 }
 
 .project-preview-container {
@@ -707,7 +721,13 @@ body {
 }
 
 .project-description-copy {
-  font-size: 1.6vw;
+  font-size: 3.6vw;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .project-description-copy {
+    font-size: 1.8vw;
+  }
 }
 
 .ag-logo-wrapper {
