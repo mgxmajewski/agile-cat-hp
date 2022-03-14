@@ -127,9 +127,17 @@ body {
   font-family: "Times New Roman", serif;
 }
 
+
 .upper-index {
   font-size: 2.1vw;
-  top: -1vw;
+  top: -2.2vw;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  .upper-index {
+    font-size: 2.1vw;
+    top: -1vw;
+  }
 }
 
 .button {
@@ -593,9 +601,9 @@ body {
   }
 }
 
- .project-line__description--bigger > sub {
-    top: calc(1.5 * 3.55vw);
-  }
+.project-line__description--bigger > sub {
+  top: calc(1.5 * 3.55vw);
+}
 
 @media (min-aspect-ratio: 63/44) {
   .project-line__description--bigger > sub {
@@ -1004,7 +1012,7 @@ body {
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
+    peage-break-inside: avoid;
   }
 
   /*
