@@ -585,23 +585,15 @@ body {
   }
 }
 
-/*@media (min-aspect-ratio: 63/44) {*/
-/*  .project-line__name--bigger > sup {*/
-/*    font-size: 3.5vw;*/
-/*  }*/
-/*}*/
-
-@media (min-aspect-ratio: 63/44) {
-  .project-line__name--bigger > sup {
-    font-size: calc(.45 * 6vw);
-    top: calc(0.3 * 2vw);
-  }
+.project-line__name--bigger > sup {
+  font-size: calc(.45 * 6vw);
+  top: calc(0.32 * 6vw);
 }
 
 @media (min-aspect-ratio: 63/44) {
   .project-line__name--bigger > sup {
     font-size: calc(.45 * 3.5vw);
-    top: calc(0.3 * 3.5vw);
+    top: calc(0.32 * 3.5vw);
   }
 }
 
