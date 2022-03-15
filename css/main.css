@@ -276,13 +276,12 @@ body {
 }
 
 .cat-copy--centered {
-  padding-top: calc(50vh - 3 * 1.2 * var(--bigger-font));
-  display: flex;
+  padding-top: calc(50vh - 3 * 1.3 * 4.95vw);
 }
 
 @media (min-aspect-ratio: 63/44) {
   .cat-copy--centered {
-    padding-top: calc(50vh - 2 * 1.2 * 3.47vw);
+    padding-top: calc(50vh - 2 * 1.2 * 3.58vw);
     display: flex;
   }
 }
@@ -321,8 +320,6 @@ body {
 
 .contact-container {
   font-size: 4.5vw;
-  /*width: auto;*/
-  /*padding: 5vw;*/
   width: 100%;
   line-height: 1.3;
   word-break: break-word;
@@ -861,7 +858,6 @@ body {
     /*align-content: center;*/
   }
 
-
   .buttons-wrapper-desktop {
     grid-area: menu-desktop;
     display: grid;
@@ -872,9 +868,6 @@ body {
     /*align-content: baseline;*/
   }
 
-  /*.mobile {*/
-  /*  display: none;*/
-  /*}*/
   .eyes {
     font-size: 1.6vw;
   }
