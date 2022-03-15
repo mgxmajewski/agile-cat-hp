@@ -706,11 +706,13 @@ body {
 }
 
 .project-description-copy {
+  margin-block-start: 1vw;
   font-size: 3.6vw;
 }
 
 @media (min-aspect-ratio: 63/44) {
   .project-description-copy {
+    margin-block-start: .5vw;
     font-size: 1.8vw;
   }
 }
