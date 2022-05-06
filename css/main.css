@@ -646,8 +646,8 @@ body {
 @media (min-aspect-ratio: 63/44) {
   .paragraph-medium {
     font-size: 2.6vw;
-    word-break: break-all;
-    /*word-wrap: break-word;*/
+    /*word-break: break-all;*/
+    word-wrap: break-word;
   }
 }
 
