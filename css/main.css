@@ -698,7 +698,7 @@ body {
   font-size: 0;
   grid-area: buttons;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
   justify-content: space-evenly;
   grid-gap: 2vw;
   align-self: end;
