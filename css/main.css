@@ -690,8 +690,10 @@ body {
   }
 }
 
-.project-preview-container__image > img {
+.project-preview-container__image > iframe {
   width: 100%;
+  aspect-ratio: 16/9;
+  /*height: 100%;*/
 }
 
 .project-preview-container__buttons {
