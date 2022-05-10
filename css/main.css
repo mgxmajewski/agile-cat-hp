@@ -670,7 +670,8 @@ body {
   grid-template-areas:
     "image"
     "buttons";
-  padding: .5vw 0;
+  /*padding: .5vw 0;*/
+  padding-bottom: .8vw;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -682,6 +683,7 @@ body {
 
 .project-preview-container__image {
   grid-area: image;
+  padding-top: 1.5vw;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -693,10 +695,14 @@ body {
 .project-preview-container__image > iframe {
   width: 100%;
   aspect-ratio: 16/9;
+  /*border: 1px solid var(--cat-blue);*/
+  /*border-radius: .4vw;*/
 }
 
 .project-preview-container__image > img {
   width: 100%;
+  /*border: 1px solid var(--cat-blue);*/
+  /*border-radius: .4vw;*/
 }
 
 .project-preview-container__buttons {
