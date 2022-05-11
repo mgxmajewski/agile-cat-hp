@@ -127,6 +127,36 @@ body {
   font-family: "Times New Roman", serif;
 }
 
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 2vw;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  ul {
+    padding-left: 1vw;
+  }
+}
+
+ul li:before {
+  content: "◊";
+  margin-top: 1vw;
+  font-size: 70%;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-aspect-ratio: 63/44) {
+  ul li:before {
+    margin-top: .7vw;
+    font-size: 60%;
+    position: absolute;
+    left: 0;
+  }
+}
+
 .upper-index {
   font-size: 2.1vw;
   top: -2.2vw;
@@ -219,8 +249,8 @@ body {
 .empty.rhomboid {
   font-size: 2.1vw;
   top: -.4vw;
-  margin-left: -.5vw;
-  margin-right: -.5vw;
+  margin-left: -.3vw;
+  margin-right: -.7vw;
 }
 
 .arrow {
