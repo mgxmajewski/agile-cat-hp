@@ -131,7 +131,7 @@ ul {
   position: relative;
   list-style: none;
   margin-left: 0;
-  padding-left: 2vw;
+  padding-left: 2.8vw;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -142,7 +142,7 @@ ul {
 
 ul > li:before {
   content: "◊";
-  margin-top: .8vw;
+  margin-top: .1vw;
   /*font-size: 70%;*/
   position: absolute;
   left: 0;
@@ -150,8 +150,8 @@ ul > li:before {
 
 @media (min-aspect-ratio: 63/44) {
   ul li:before {
-    margin-top: .7vw;
-    font-size: 60%;
+    margin-top: .4vw;
+    font-size: 80%;
     position: absolute;
     left: 0;
   }
@@ -734,9 +734,15 @@ ul > li:before {
 .project-preview-container__image > iframe {
   width: 100%;
   aspect-ratio: 16/9;
-  /*border: 1px solid var(--cat-blue);*/
-  /*border-radius: .4vw;*/
+  border: 1px solid var(--cat-blue);
+  border-radius: 1vw;
 }
+@media (min-aspect-ratio: 63/44) {
+  .project-preview-container__image > iframe {
+    border-radius: .4vw;
+  }
+}
+
 
 .project-preview-container__image > img {
   width: 100%;
