@@ -77,30 +77,26 @@
       playing
       this zero-player game!</p>
 
-    Technology Stack:
-
+    <p>Technology Stack:</p>
     <ul>
-      <li>Client: gatsby.js (React framework), JWT (access + refresh token), Apollo Client (websocket support). In the
-        browser client user can:
+      <li><b>Browser Client: Gatsby.js (React framework), JWT (access + refresh token), Apollo Client (websocket
+        support)</b><br/>
+        In the browser client user can:
         <ol>
           <li>register/login</li>
           <li>edit and save the grid state</li>
           <li>iterate grid in adjustable pace</li>
-          edit gird while it is iterating (realtime)
+          <li>edit gird while it is iterating (realtime)</li>
         </ol>
       </li>
-      <li>GraphQL server: YogaGraphql, JWT Graphql server stores the most actual state of the users grid. It laso checks
-        if
-        the subscription client has valid access token.
+      <li><b>GraphQL server: YogaGraphql, JWT</b><br/>
+        Graphql server stores the most actual state of the users grid. It also checks if the subscription client has valid access token.
       </li>
-      <li>API: HapiJS Node.js server compute the grid state and handles all database transactions (Sequelize ORM
-        library).
-        Server also registers and authenticates user.
+      <li><b>API: HapiJS (Node.js), JWT</b> <br/>
+        Server computes the grid state and handles all database transactions (Sequelize ORM library). Server also registers and authenticates user.
       </li>
-      <li>Databases: Postgres & Redis PostgreSQL stores patterns and user data. Redis is used to maintain loggged in
-        users
-        and
-        could be used to revoke access if necessary.
+      <li><b>Databases: Postgres & Redis</b> <br/>
+        PostgresSQL stores patterns and user data. Redis is used to maintain logged-in users and could be used to revoke access if necessary.
       </li>
     </ul>
   </div>

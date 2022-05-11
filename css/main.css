@@ -140,10 +140,10 @@ ul {
   }
 }
 
-ul li:before {
+ul > li:before {
   content: "◊";
-  margin-top: 1vw;
-  font-size: 70%;
+  margin-top: .8vw;
+  /*font-size: 70%;*/
   position: absolute;
   left: 0;
 }
@@ -156,6 +156,15 @@ ul li:before {
     left: 0;
   }
 }
+
+
+/*@media (min-aspect-ratio: 63/44) {*/
+/*  p {*/
+/*    margin-top: 1vw;*/
+/*    margin-bottom: 1vw;*/
+/*  }*/
+/*}*/
+
 
 .upper-index {
   font-size: 2.1vw;
