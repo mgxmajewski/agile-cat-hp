@@ -77,7 +77,10 @@
       playing
       this zero-player game!</p>
 
-    <p>Technology Stack:</p>
+    <div class="tab-separator">
+    <div class="tab-separator__tab">Specification</div>
+    <div class="tab-separator__line"></div>
+  </div>
     <ul>
       <li><b>Browser Client: Gatsby.js (React framework), JWT (access + refresh token), Apollo Client (websocket
         support)</b><br/>
@@ -90,13 +93,13 @@
         </ol>
       </li>
       <li><b>GraphQL server: YogaGraphql, JWT</b><br/>
-        Graphql server stores the most actual state of the users grid. It also checks if the subscription client has valid access token.
+        Graphql server stores the most actual state of the users grid & checks if the subscription client has valid access token.
       </li>
-      <li><b>API: HapiJS (Node.js), JWT</b> <br/>
-        Server computes the grid state and handles all database transactions (Sequelize ORM library). Server also registers and authenticates user.
+      <li><b>API: HapiJS (Node.js), JWT, Sequelize ORM</b> <br/>
+        Server renders the grid state, handles all the database transactions, registers & authenticates user.
       </li>
-      <li><b>Databases: Postgres & Redis</b> <br/>
-        PostgresSQL stores patterns and user data. Redis is used to maintain logged-in users and could be used to revoke access if necessary.
+      <li><b>Databases: Postgres & Redis</b><br/>
+        PostgresSQL stores patterns and user data. Redis keeps track of logged-in users & enables to revoke access if necessary.
       </li>
     </ul>
   </div>
