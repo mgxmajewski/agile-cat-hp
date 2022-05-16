@@ -50,21 +50,29 @@
     </div>
   </div>
   <div class="project-description-copy">
-    <p>Finance is one of CS50's assignments. It is a web app via which you can manage portfolios of stocks. Not only
-      will this tool allow you to check real stocks’ actual prices and portfolios’ values, but it will also let you buy
-      (okay, “buy”) and sell (okay, “sell”) stocks by querying IEX for stocks’ prices.
+    <p>
+      Finance is one of CS50's assignments. It is a web app via which you can manage portfolios of stocks. Not only
+      will this tool allow you to check real stocks’ actual prices and portfolios’ values, but it will also let you buy  and sell stocks by querying IEX for stocks’ prices.
     </p>
-    <p>My personal touch to the application was to add a lookup functionality for stock names. Using ETL software
+    <div class="tab-separator">
+      <div class="tab-separator__tab">My design</div>
+      <div class="tab-separator__line"></div>
+    </div>
+    <p>
+      My personal touch to the application was to add a lookup functionality for stock names. Using ETL software
       (Talend Studio), I fetched 10k rows of stock data and uploaded it to applications SQLite DB. I have also created
-      an API <i><b>suggestions</b></i> endpoint. The data, is retrieved with dedicated JS script, which fetches the five best matches
-      for the lookup phrase on each user keystroke. </p>
-    <p>Designing a DB from the scratch, was another interesting part of the project. To achieve clean architecturey, I
+      an API <i><b>suggestions</b></i> endpoint. Client retrieves the data with a dedicated JS script, which fetches the
+      five
+      best matches for the lookup phrase on each keystroke of the user.
+    </p>
+    <p>
+      Designing a DB from scratch, was another interesting part of the project. To achieve clean architecture, I
       followed the database normalization process to.
     </p>
     <div class="tab-separator">
-    <div class="tab-separator__tab">Specification</div>
-    <div class="tab-separator__line"></div>
-  </div>
+      <div class="tab-separator__tab">Specification</div>
+      <div class="tab-separator__line"></div>
+    </div>
     <p><b><i>register</i></b></p>
     <ul>
       <li>
