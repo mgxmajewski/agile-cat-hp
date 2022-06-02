@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="26a9514b-69c3-4dab-91a1-e9f16702f525" name="agile-cat-hp" url="">
-        <fileTransfer rootFolder="/home/agilecat/ag-hp" accessType="SFTP" host="34.116.183.147" port="22" sshConfigId="1079057e-7db8-49c8-90cc-e2f4da799361" sshConfig="agile-machine-vm" keyPair="true">
+        <fileTransfer rootFolder="/home/agilecat/ag-hp" accessType="SFTP" host="34.125.247.245" port="22" sshConfigId="1079057e-7db8-49c8-90cc-e2f4da799361" sshConfig="agile-machine-vm" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
