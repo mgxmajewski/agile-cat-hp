@@ -316,7 +316,7 @@ ul > li:before {
 
 @media (min-aspect-ratio: 63/44) {
   .cat-copy {
-    font-size: 3.47vw;
+    font-size: 3.5vw;
     padding-top: 2vw;
     padding-left: 6.2vw;
     padding-right: 6.2vw;
