@@ -719,8 +719,8 @@ ul > li:before {
   grid-template-areas:
     "image"
     "buttons";
-  /*padding: .5vw 0;*/
   padding-bottom: .8vw;
+  padding-top: 2vw;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -732,7 +732,9 @@ ul > li:before {
 
 .project-preview-container__image {
   grid-area: image;
-  padding-top: 1.5vw;
+  border: 1px solid var(--cat-blue);
+  border-radius: 1vw;
+  overflow: hidden;
 }
 
 @media (min-aspect-ratio: 63/44) {
@@ -744,9 +746,9 @@ ul > li:before {
 .project-preview-container__image > iframe {
   width: 100%;
   aspect-ratio: 16/9;
-  border: 1px solid var(--cat-blue);
-  border-radius: 1vw;
+  align-items: start;
 }
+
 @media (min-aspect-ratio: 63/44) {
   .project-preview-container__image > iframe {
     border-radius: .4vw;
@@ -948,6 +950,7 @@ ul > li:before {
     min-height: calc(1.4 * 3.4vw);
   }
 }
+
 /* ==========================================================================
    The end Author's custom styles (first part 2)
    ========================================================================== */
