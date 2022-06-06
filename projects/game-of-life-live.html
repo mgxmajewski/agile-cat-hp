@@ -91,7 +91,7 @@
       many users' devices.
     </p>
 
-    <p><b><i>JWT & safety</i></b></p>
+    <p><b><i>JWT & security</i></b></p>
     <p>Many operations to authenticate the user on every API call would be using too much of the server resources. I
       decided to go with access+refresh token architecture. For safety reasons, the client is storing the refresh token
       in the httpOnly cookie. Only if the access token is close to expiring does the client fetches the new one. To make
