@@ -955,7 +955,7 @@ ul > li:before {
   content:"Live demo";
 }
 
-.contact-ask:hover {
+.contact-ask:hover::after {
   content: "Contact for access";
 }
 
