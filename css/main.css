@@ -951,8 +951,12 @@ ul > li:before {
   }
 }
 
+.contact-ask::after{
+  content:"Live demo";
+}
+
 .contact-ask:hover {
-  content: "contact for access";
+  content: "Contact for access";
 }
 
 /* ==========================================================================
