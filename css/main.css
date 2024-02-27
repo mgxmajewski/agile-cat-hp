@@ -959,6 +959,14 @@ ul > li:before {
   content: "Contact for access";
 }
 
+.repo-ask::after{
+  content:"GitHub repo";
+}
+
+.repo-ask:hover::after {
+  content: "Contact for access";
+}
+
 /* ==========================================================================
    The end Author's custom styles (first part 2)
    ========================================================================== */
