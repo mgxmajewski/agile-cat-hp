@@ -696,6 +696,10 @@ ul > li:before {
   /*word-wrap: break-word;*/
 }
 
+.paragraph-medium__tight{
+  line-height: 1.2;
+}
+
 @media (min-aspect-ratio: 63/44) {
   .paragraph-medium {
     font-size: 2.6vw;
