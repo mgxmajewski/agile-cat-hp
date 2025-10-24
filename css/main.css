@@ -35,8 +35,6 @@
   --cat-aspect-ratio: 63/44;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
 }
 
 *, ::before, ::after {
