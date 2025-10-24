@@ -62,6 +62,8 @@ html {
   line-height: 1.4;
   width: 100vw;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*
@@ -137,6 +139,8 @@ textarea {
 body {
   color: var(--cat-blue);
   font-family: "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
@@ -1127,7 +1131,7 @@ ul > li:before {
   pre,
   blockquote {
     border: 1px solid #999;
-    peage-break-inside: avoid;
+    break-inside: avoid;
   }
 
   /*
